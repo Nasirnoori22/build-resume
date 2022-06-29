@@ -4,10 +4,10 @@ import 'package:get/get.dart';
 
 import '../services/database_service.dart';
 
-class PersonnelDetailsController extends GetxController {
-  final DatabaseService database = DatabaseService();
+class RegisterController extends GetxController {
+  final DatabaseService register_database = DatabaseService();
 
-  var personnalDetails = <PersonnelDetailsController>[].obs;
+  var personnalDetails = <RegisterController>[].obs;
 
   var newpersonnnelDetails = {}.obs;
 }

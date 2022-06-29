@@ -1,10 +1,14 @@
+import 'package:build_resume/controller/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+
+import '../controller/auth_controller.dart';
 
 class DrawerWidget extends StatelessWidget {
-  const DrawerWidget({Key? key}) : super(key: key);
-
+  DrawerWidget({Key? key}) : super(key: key);
+  final AuthController singoutController = Get.put(AuthController());
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -29,10 +33,9 @@ class DrawerWidget extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Item 2'),
+            title: const Text('Sign out'),
             onTap: () {
-              // Update the state of the app.
-              // ...
+              singoutController.logout();
             },
           ),
         ],

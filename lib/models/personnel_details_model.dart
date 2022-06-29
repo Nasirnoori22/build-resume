@@ -53,7 +53,7 @@ class PersonnelDetails extends Equatable {
     };
   }
 
-  factory PersonnelDetails.fromSnapshot(DocumentSnapshot snap, snap) {
+  factory PersonnelDetails.fromSnapshot(DocumentSnapshot snap) {
     return PersonnelDetails(
         id: snap['id'],
         name: snap['name'],

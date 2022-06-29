@@ -29,11 +29,11 @@ class _HomeProfileState extends State<HomeProfile> {
       backgroundColor: Colors.grey.shade100,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => PdfPreviewPage(),
-            ),
-          );
+          // Navigator.of(context).push(
+          //   MaterialPageRoute(
+          //     builder: (context) => PdfPreviewPage(),
+          //   ),
+          // );
           // rootBundle.
         },
         child: Icon(Icons.picture_as_pdf),
